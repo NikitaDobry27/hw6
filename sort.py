@@ -1,4 +1,8 @@
 import re
+import os
+
+
+
 
 def normalize(string:str) -> str:
     
@@ -30,12 +34,31 @@ def normalize(string:str) -> str:
 
     return normalized_string
 
-
-def process_files(name:str) -> dict:
-    formats = {
+formats = {
         'images': ['JPEG', 'PNG', 'JPG', 'SVG'],
-        'video': [],
-        'audio': [],
-        'documents': [],
-        'archives': []
+        'video': ['AVI', 'MP4', 'MOV', 'MKV'],
+        'audio': ['MP3', 'OGG', 'WAV', 'AMR'],
+        'documents': ['DOC', 'DOCX', 'TXT', 'PDF', 'XLSX', 'PPTX'],
+        'archives': ['ZIP', 'GZ', 'TAR']
     }
+
+def process_images(path:str) -> dict:
+    image_filenames = []
+
+
+
+def process_videos(file_path):
+    pass
+
+def process_documents(file_path):
+    pass
+
+def process_music(file_path):
+    pass
+
+def process_archives(file_path):
+    pass
+
+def process_unknown(file_path):
+    pass
+
