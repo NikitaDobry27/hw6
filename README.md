@@ -8,9 +8,8 @@ To use the script, pass the path to the directory you want to organize as an arg
 
 For example:
 
-bash
-Copy code
-python file_organizer.py /path/to/directory
+
+```python file_organizer.py /path/to/directory
 Supported File Formats
 
 The script supports the following file formats:
