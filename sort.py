@@ -6,7 +6,6 @@ from normalize import normalize
 from formats import formats
 
 
-PATH_TO_FOLDER = sys.argv[1]
 known_formats = set()
 unknown_formats = set()
 RESULT = []
