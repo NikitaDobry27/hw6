@@ -5,8 +5,6 @@ import sys
 
 
 
-PATH_TO_FOLDER = sys.argv[1]
-
 def normalize(string:str) -> str:
     
     if not isinstance(string, str):
