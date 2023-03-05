@@ -1,53 +1,33 @@
-File Organizer
+This script sorts files in a directory into appropriate folders. The script identifies the type of file by its extension and moves it to a folder that corresponds to its category.
 
-This script organizes files in a given directory according to their file type. It creates separate directories for images, videos, audios, documents and archives, and moves files into their respective directories.
+## Running the script
 
-Usage
+To run the script, enter the following command in the terminal:
 
-To use the script, pass the path to the directory you want to organize as an argument when running the script in the command line.
+```
+python sort_files.py folder_path
 
-For example:
+```
 
+Replace `folder_path` with the path to the folder that you want to sort.
 
-```python 
-```file_organizer.py /path/to/directory
+## File types and categories
 
-Supported File Formats
+The following file types are supported:
 
-The script supports the following file formats:
+- Images (jpg, jpeg, png, gif, svg)
+- Videos (avi, mp4, mov, mkv)
+- Documents (doc, docx, pdf, xls, xlsx, ppt, pptx)
+- Archives (zip, tar, gz, rar)
 
-Images
-- JPEG
-- JPG
-- PNG
-- SVG
+## Output
 
-Videos
-- AVI
-- MP4
-- MOV
-- MKV
+After running the script, the following output will be generated:
 
-Audios
-- MP3
-- OGG
-- WAV
-- AMR
+- A list of moved files
+- A list of known file formats
+- A list of unknown file formats
 
-Documents
-- DOC
-- DOCX
-- TXT
-- PDF
-- XLSX
-- PPTX
-- CSV
+## Note
 
-Archives
-- ZIP
-- GZ
-- TAR
-
-Output
-
-The script outputs a list of all files that were moved, as well as a list of known and unknown file formats.
+Empty folders that are not part of the supported file categories will be deleted.
