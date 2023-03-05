@@ -20,16 +20,19 @@ Images
 - JPG
 - PNG
 - SVG
+
 Videos
 - AVI
 - MP4
 - MOV
 - MKV
+
 Audios
 - MP3
 - OGG
 - WAV
 - AMR
+
 Documents
 - DOC
 - DOCX
@@ -38,10 +41,12 @@ Documents
 - XLSX
 - PPTX
 - CSV
-- Archives
+
+Archives
 - ZIP
 - GZ
 - TAR
+
 Output
 
 The script outputs a list of all files that were moved, as well as a list of known and unknown file formats.
