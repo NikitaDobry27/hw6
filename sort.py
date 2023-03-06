@@ -21,7 +21,7 @@ def rename_folders(path):
                 new_folder_path = os.path.join(path, new_foldername)
                 if not os.listdir(file_path):
                     os.rename(file_path, new_folder_path)
-                    # print(f'{filename} has been renamed to {new_foldername}')
+                   
                 
                 else:
                     shutil.move(file_path, new_folder_path)
@@ -30,7 +30,7 @@ def rename_folders(path):
             new_filename = normalize(name) + ext
             new_file_path = os.path.join(path, new_filename)
             os.rename(file_path, new_file_path)
-            # print(f'{filename} has been renamed to {new_filename}')
+            
     
          
 
